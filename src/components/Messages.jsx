@@ -12,29 +12,29 @@ const Messages = () =>
 
   useEffect(() =>
   {
+
+   
     const unsub = onSnapshot(doc(db, "chats", data.chatId), (doc) =>
     {
+      
       doc.exists() && setMessages(doc.data().messages)
     });
 
-    // console.log("changed");
-
+    
     return () =>
     {
       unsub();
     };
-
+    
   }, [data.chatId]);
-
+  
 
   return (
 
     data.chatId != "null" ?
       <div className='messages'>
         {
-
-          messages.map((m) =>
-
+          messages?.map((m) =>
             <Message message={m} key={m.id} />
           )
         }
@@ -43,7 +43,7 @@ const Messages = () =>
       <div className='messages userChatNotSelected'>
         <h2>Let's Chit-Chat!</h2>
         <h6>Search your Friends via <b>Find a user </b>option!</h6>
-        <h6><b>Select a user</b> on the right to start Chit Chatting!</h6>
+        <h6><b>Select a user</b> on the left to start Chit Chatting!</h6>
       </div>
 
   )

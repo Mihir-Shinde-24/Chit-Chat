@@ -1,8 +1,8 @@
-$bg-color: #fcf7de ;
+$bg-color: #fcf7de;
 $text-purple: #967863;
 $placeholder: rgb(175, 175, 175);
-$button-clr: #ceb795;
-$text-purple-light: #8da4f1;
+$button-clr: #c1a275;
+$text-purple-light: #967863;
 $bg-sidebar: #ac9687;
 $bg-dark-purple: #a1826c;
 $text-lightest: #fffdf2;
@@ -66,6 +66,7 @@ $warning: rgb(252, 81, 81);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   .formWrapper {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -161,6 +162,7 @@ $warning: rgb(252, 81, 81);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   .container {
 
@@ -293,13 +295,16 @@ $warning: rgb(252, 81, 81);
       }
 
       .search {
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid $bg-dark-purple;
 
         .searchForm {
           padding: 10px;
+          display: flex;
+          justify-content: space-between;
 
           @include mobile {
             display: none;
+            
           }
 
           input {
@@ -308,10 +313,26 @@ $warning: rgb(252, 81, 81);
             outline: none;
             color: white;
 
-
             &::placeholder {
               color: lightgray;
             }
+          }
+
+          button{
+
+            background-color: $text-purple;
+            color: $text-lightest;
+            font-size: 13px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: 500;   
+            padding: 5px 10px;         
+
+            &:hover {
+              background-color: $button-clr;
+            }
+
           }
         }
       }
@@ -414,7 +435,7 @@ $warning: rgb(252, 81, 81);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: lightgray;
+        color: white;
         padding: 10px;
 
         .chatIcons {
@@ -545,7 +566,7 @@ $warning: rgb(252, 81, 81);
             margin-bottom: 20px;
             font-size: 30px;
             color: $bg-dark-purple;
-            
+
           }
 
           h6 {
@@ -614,5 +635,54 @@ $warning: rgb(252, 81, 81);
 
     }
   }
+
+}
+
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 23px;
+  font-size: 15px;
+  text-align: center;
+
+  @include mobile {
+    width: 90%;
+    font-size: 12px;
+  font-weight: 600;
+
+
+  }
+
+  p {
+    color: $button-clr;
+  }
+
+  span {
+    cursor: pointer;
+    color: $bg-dark-purple;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: #614e40;
+    }
+  }
+
+  .icon {
+    color: #0a66c2;
+    position: relative;
+    top: 2px;
+
+    &:hover {
+      color: #06417c;
+    }
+
+  }
+
 
 }

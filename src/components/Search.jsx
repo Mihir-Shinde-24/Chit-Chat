@@ -60,10 +60,10 @@ const Search = () =>
 
 
 
-  const handleKey = (e) =>
-  {
-    e.code === "Enter" && handleSearch();
-  };
+  // const handleKey = (e) =>
+  // {
+    // e.code === "Enter" && handleSearch();
+  // };
 
   const handleSelect = async (user) =>
   {
@@ -126,12 +126,13 @@ const Search = () =>
         <input 
         type="text" 
         placeholder='Find a user' 
-        onKeyDown={handleKey} 
+        // onKeyDown={handleKey} 
         onChange={(e) => setUserName(e.target.value)} 
         value={userName} />
+        <button onClick={ ()=> handleSearch()}>Find</button>
       </div>
       {
-        err ? <div style={{ color: 'rgb(110 107 164)', padding: '10px', textAlign: 'center' }}>User Not Found!</div> : ""
+        err ? <div style={{ color: "#fffdf2", padding: '10px', textAlign: 'center' }}>User not found</div> : ""
       }
       {
         allUsers.map((u, id) =>

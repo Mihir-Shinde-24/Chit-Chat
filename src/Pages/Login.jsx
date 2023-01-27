@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useNavigate ,Link} from 'react-router-dom';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebase';
+import Footer from '../components/Footer';
 
 const Login = () =>
 {
@@ -49,6 +50,7 @@ const Login = () =>
         </form>
         <p>You don't have an Account? <Link to='/register'>Create an Account</Link></p>
       </div>
+      <Footer/>
     </div>
   )
 }
