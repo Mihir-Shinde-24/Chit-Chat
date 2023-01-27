@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "lets-chit-chat-app",
+    "chit-chat": "lets-chit-chat-app"
+  },
+  "targets": {},
+  "etags": {}
+}

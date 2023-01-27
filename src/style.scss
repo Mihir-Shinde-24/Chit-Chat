@@ -1,0 +1,617 @@
+$bg-color: #a7bcff;
+$text-purple: #5d5b8d;
+$placeholder: rgb(175, 175, 175);
+$button-clr: #7b96ec;
+$text-purple-light: #8da4f1;
+$bg-sidebar: #3e3c61;
+$bg-dark-purple: #2f2d52;
+$text-lightest: #ddddf7;
+$warning: rgb(252, 81, 81);
+
+
+
+
+// Media Query using SASS
+
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $text-purple #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+
+  @include mobile {
+    width: 12px;
+  }
+}
+
+*::-webkit-scrollbar-track {
+  background: $text-lightest;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $text-purple;
+  border-radius: 10px;
+  border: 3px solid $text-lightest;
+}
+
+
+// Elements
+
+.formContainer {
+  background: $bg-color;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .formWrapper {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .logo {
+      color: $text-purple;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .title {
+      color: $text-purple;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input {
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid $bg-color;
+        width: 250px;
+        outline: none;
+
+        &::placeholder {
+          color: $placeholder;
+          font-size: 14px;
+        }
+      }
+
+      button {
+        background-color: $button-clr;
+        color: white;
+        padding: 10px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+
+        &:active {
+          background-color: $bg-sidebar;
+        }
+
+        &:hover {
+          background-color: $text-purple;
+        }
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $text-purple-light;
+        font-size: 12px;
+        cursor: pointer;
+
+        img {
+          width: 32px;
+        }
+
+      }
+
+      .warning {
+        color: $warning;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    p {
+      color: $text-purple;
+      font-size: 12px;
+      margin-top: 10px;
+
+    }
+  }
+}
+
+.home {
+  background: $bg-color;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    // border: 1px solid white;
+    border-radius: 10px;
+    width: 65%;
+    height: 80%;
+    display: flex;
+    overflow: hidden;
+
+    @include tablet {
+      width: 90%;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: $bg-sidebar ;
+      position: relative;
+
+      @include mobile {
+        width: 12px;
+        flex: 0.4;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        background-color: $bg-dark-purple;
+        height: 50px;
+        padding: 10px;
+        justify-content: space-between;
+        color: $text-lightest;
+
+        @include mobile {
+          justify-content: center;
+        }
+
+        .logo {
+          font-weight: bold;
+
+          @include tablet {
+            display: none;
+          }
+        }
+
+        .user {
+          display: flex;
+          gap: 7px;
+          justify-content: space-between;
+          align-items: center;
+
+          @include mobile {
+            flex-direction: column;
+            gap: 0px;
+            justify-content: center;
+            align-items: center;
+
+          }
+
+
+          img {
+            background-color: $text-lightest;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+
+            @include mobile {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          span {
+            font-size: 14px;
+            font-weight: 500;
+
+
+            @include mobile {
+
+              max-width: 45px;
+              font-size: 2.3vw;
+              overflow: hidden;
+
+            }
+          }
+
+          button {
+            background-color: $text-purple;
+            color: $text-lightest;
+            font-size: 12px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: 500;
+            padding: 2px 5px;
+
+
+
+            &:hover {
+              background-color: $button-clr;
+            }
+
+
+
+            @include tablet {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              padding: 5px 9px;
+            }
+
+            @include mobile {
+
+              position: absolute;
+              right: 10px;
+              left: 5px;
+              height: 29px;
+              font-weight: 700;
+              font-size: 12px;
+              padding: 2px 3px;
+              overflow: visible;
+              min-width: 47px;
+
+            }
+
+          }
+        }
+      }
+
+      .search {
+        border-bottom: 1px solid gray;
+
+        .searchForm {
+          padding: 10px;
+
+          @include mobile {
+            display: none;
+          }
+
+          input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+
+
+            &::placeholder {
+              color: lightgray;
+            }
+          }
+        }
+      }
+
+      .chats {
+        // height: 75%;
+        overflow: scroll;
+        overflow-x: hidden;
+        height: calc(100% - 115px);
+
+        /* ===== Scrollbar CSS ===== */
+        /* Firefox */
+
+        scrollbar-width: auto;
+        scrollbar-color: $text-purple #ffffff;
+
+
+        /* Chrome, Edge, and Safari */
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: $bg-dark-purple;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $text-purple;
+          border-radius: 10px;
+          border: 1px solid $text-purple;
+        }
+
+      }
+
+      .userChat {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        cursor: pointer;
+        border-bottom: 1px solid $bg-dark-purple;
+
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+
+        }
+
+        &:hover {
+          background-color: $bg-dark-purple;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+
+          @include mobile {
+            width: 40px;
+            height: 40px;
+          }
+
+
+        }
+
+        .userChatInfo {
+
+          span {
+            font-size: 18px;
+            font-weight: 500;
+
+            @include mobile {
+              font-size: 14px;
+            }
+
+          }
+
+          p {
+            font-size: 14px;
+            color: lightgray;
+
+            @include mobile {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .chat {
+      flex: 2;
+
+      .chatInfo {
+
+        height: 50px;
+        background-color: $text-purple;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: lightgray;
+        padding: 10px;
+
+        .chatIcons {
+          display: flex;
+          gap: 10px;
+
+          img {
+            height: 24px;
+            cursor: pointer;
+
+          }
+        }
+
+      }
+
+      .messages {
+        background-color: $text-lightest;
+        // padding: 10px;
+        padding: 10px 0px 10px 10px;
+        height: calc(100% - 160px);
+        overflow: scroll;
+        overflow-x: hidden;
+
+
+        .message {
+
+          display: flex;
+          gap: 20px;
+          margin-bottom: 20px;
+
+          @include tablet {
+            gap: 10px;
+          }
+
+          .messageInfo {
+            display: flex;
+            flex-direction: column;
+            color: gray;
+            font-weight: 400;
+            font-size: 14px;
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            span {
+              font-size: 1vw;
+            }
+          }
+
+          .messageContent {
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+            p {
+              background-color: white;
+              padding: 8px 11px;
+              border-radius: 0px 10px 10px 10px;
+              max-width: max-content;
+
+              @include mobile {
+                padding: 4px 8px;
+              }
+
+              @include tablet() {
+                padding: 6px 9px;
+              }
+            }
+
+
+            img {
+              width: 50%;
+
+            }
+
+          }
+
+          &.owner {
+            flex-direction: row-reverse;
+
+            .messageContent {
+              align-items: flex-end;
+
+            }
+
+            p {
+              background-color: $text-purple-light;
+              color: white;
+              border-radius: 10px 0px 10px 10px;
+
+
+            }
+
+          }
+
+        }
+      }
+
+      .userChatNotSelected {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+          margin-bottom: 20px;
+          font-size: 35px;
+          color: #6b85da;
+          font-weight: 700;
+        }
+
+        h6 {
+          font-weight: 500;
+          color: $button-clr ;
+        }
+
+        @include mobile {
+
+          h2 {
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: #6b85da;
+          }
+
+          h6 {
+            font-size: 12px;
+            color: $button-clr ;
+          }
+
+        }
+
+      }
+
+
+      .input {
+        height: 50px;
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+
+          width: 100%;
+          border: none;
+          outline: none;
+          color: $bg-dark-purple ;
+          font-size: 18px;
+
+          &::placeholder {
+            color: lightgray;
+          }
+        }
+
+        .send {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            height: 24px;
+            cursor: pointer;
+          }
+
+          button {
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            background-color: $text-purple-light;
+            cursor: pointer;
+
+            &:active {
+              background-color: $bg-sidebar;
+            }
+
+            &:hover {
+              background-color: $text-purple;
+            }
+
+          }
+        }
+      }
+
+      .notSelectedInput {
+        background-color: $text-lightest;
+      }
+
+    }
+  }
+
+}
