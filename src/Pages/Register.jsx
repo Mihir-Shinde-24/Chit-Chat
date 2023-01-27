@@ -111,7 +111,7 @@ const Register = () =>
             <span>Add an avatar</span>
           </label>
           <input type="file" id='file' accept=".jpg,.jpeg" style={{display:'none'}} />
-          <button>Sign up</button>
+          <button>Create new account</button>
           {
             err && <span className='warning'>Something went wrong..</span>
           }

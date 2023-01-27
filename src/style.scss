@@ -1,11 +1,11 @@
-$bg-color: #a7bcff;
-$text-purple: #5d5b8d;
+$bg-color: #fcf7de ;
+$text-purple: #967863;
 $placeholder: rgb(175, 175, 175);
-$button-clr: #7b96ec;
+$button-clr: #ceb795;
 $text-purple-light: #8da4f1;
-$bg-sidebar: #3e3c61;
-$bg-dark-purple: #2f2d52;
-$text-lightest: #ddddf7;
+$bg-sidebar: #ac9687;
+$bg-dark-purple: #a1826c;
+$text-lightest: #fffdf2;
 $warning: rgb(252, 81, 81);
 
 
@@ -79,8 +79,8 @@ $warning: rgb(252, 81, 81);
 
     .logo {
       color: $text-purple;
-      font-weight: bold;
-      font-size: 24px;
+      font-weight: 650;
+      font-size: 25px;
     }
 
     .title {
@@ -476,7 +476,7 @@ $warning: rgb(252, 81, 81);
 
 
             p {
-              background-color: white;
+              background-color: $bg-color;
               padding: 8px 11px;
               border-radius: 0px 10px 10px 10px;
               max-width: max-content;
@@ -507,7 +507,7 @@ $warning: rgb(252, 81, 81);
             }
 
             p {
-              background-color: $text-purple-light;
+              background-color: $bg-dark-purple;
               color: white;
               border-radius: 10px 0px 10px 10px;
 
@@ -530,7 +530,7 @@ $warning: rgb(252, 81, 81);
         h2 {
           margin-bottom: 20px;
           font-size: 35px;
-          color: #6b85da;
+          color: $bg-dark-purple;
           font-weight: 700;
         }
 
@@ -544,7 +544,8 @@ $warning: rgb(252, 81, 81);
           h2 {
             margin-bottom: 20px;
             font-size: 30px;
-            color: #6b85da;
+            color: $bg-dark-purple;
+            
           }
 
           h6 {
@@ -592,7 +593,7 @@ $warning: rgb(252, 81, 81);
             border: none;
             padding: 10px 15px;
             color: white;
-            background-color: $text-purple-light;
+            background-color: $bg-dark-purple ;
             cursor: pointer;
 
             &:active {

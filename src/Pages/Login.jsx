@@ -42,12 +42,12 @@ const Login = () =>
         <form onSubmit={handleSubmit} >
           <input type="email" placeholder='Enter Email' />
           <input type="text" placeholder='Enter Password'/>
-          <button>Sign in</button>
+          <button>Login</button>
           {
             err && <span className='warning'>Something went wrong..</span>
           }
         </form>
-        <p>You don't have an Account? <Link to='/register'>Register</Link></p>
+        <p>You don't have an Account? <Link to='/register'>Create an Account</Link></p>
       </div>
     </div>
   )
