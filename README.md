@@ -36,6 +36,4 @@ Chit Chat is Modern Responsive Cross-Platform Messenger App developed using tech
 15. So, What are you waiting for? **`Let's Chit Chat!`**
 
 
-## Check out the website here! 
-
-[Chit-Chat 👉](https://lets-chit-chat-app.web.app/login)
+## Check out the website here! [👉 Chit-Chat](https://lets-chit-chat-app.web.app/login)
