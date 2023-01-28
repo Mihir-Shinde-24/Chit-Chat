@@ -643,14 +643,21 @@ $warning: rgb(252, 81, 81);
   position: absolute;
   display: flex;
   justify-content: center;
-  bottom: 23px;
+  bottom: 5px;
   font-size: 15px;
-  text-align: center;
+  text-align: center;  
 
   @include mobile {
     width: 90%;
+    font-size: 10px;
+    font-weight: 600;
+
+
+  }
+  @include tablet {
+    
     font-size: 12px;
-  font-weight: 600;
+    font-weight: 600;
 
 
   }
