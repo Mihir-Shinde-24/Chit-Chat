@@ -1,7 +1,7 @@
 
 # Chit Chat App
 
-Chit Chat is Modern Responsive Cross-Platform Messenger App developed using technologies such as **React JS, React-Router, Firebase as Backend and SCSS.** 
+Chit Chat is **Modern Responsive Cross-Platform Messenger App** developed using technologies such as **React JS, React-Router, Firebase as Backend and SCSS.** 
 
 ## Features of the Application
 
@@ -33,7 +33,9 @@ Chit Chat is Modern Responsive Cross-Platform Messenger App developed using tech
 
 14. The users can have fun by sending text messages, images or Animated GIFs as sticker.
 
-15. So, What are you waiting for? **`Let's Chit Chat!`**
+15. So, What are you waiting for? **`Let's Chit-Chat!`**
 
 
-## Check out the website here! [👉 Chit-Chat](https://lets-chit-chat-app.web.app/login)
+## Check out the website here! 👉 [Chit-Chat-App](https://lets-chit-chat-app.web.app/login)
+
+
