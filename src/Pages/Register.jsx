@@ -7,6 +7,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { Link, useNavigate } from 'react-router-dom';
 import defaultDp from '../img/default_dp.jpg';
+import Footer from '../components/Footer';
 
 const Register = () =>
 {
@@ -111,7 +112,7 @@ const Register = () =>
             <span>Add an avatar</span>
           </label>
           <input type="file" id='file' accept=".jpg,.jpeg" style={{display:'none'}} />
-          <button>Sign up</button>
+          <button>Create new account</button>
           {
             err && <span className='warning'>Something went wrong..</span>
           }
@@ -124,6 +125,7 @@ const Register = () =>
         </form>
         <p>You do have an Account?  <Link to='/login'>Login</Link></p>
       </div>
+      <Footer/>
     </div>
   )
 }

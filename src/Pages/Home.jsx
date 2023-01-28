@@ -1,5 +1,6 @@
 import React from 'react';
 import Chat from '../components/Chat';
+import Footer from '../components/Footer';
 import Sidebar from '../components/Sidebar';
 
 const Home = () =>
@@ -10,6 +11,7 @@ const Home = () =>
         <Sidebar />
         <Chat />
       </div>
+      <Footer/>
     </div>
   )
 }

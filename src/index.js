@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { AuthContextProvider } from './components/context/AuthContext';
 import { ChatContextProvider } from './components/context/ChatContext';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,7 +11,7 @@ root.render(
   <AuthContextProvider >
     <ChatContextProvider>
       <React.StrictMode>
-        <App />
+        <App />       
       </React.StrictMode>
     </ChatContextProvider>
   </AuthContextProvider>

@@ -1,11 +1,11 @@
-$bg-color: #a7bcff;
-$text-purple: #5d5b8d;
+$bg-color: #ffe3f2;
+$text-purple: #852747;
 $placeholder: rgb(175, 175, 175);
-$button-clr: #7b96ec;
-$text-purple-light: #8da4f1;
-$bg-sidebar: #3e3c61;
-$bg-dark-purple: #2f2d52;
-$text-lightest: #ddddf7;
+$button-clr: #591129;
+$text-purple-light: #967863;
+$bg-sidebar: #471931;
+$bg-dark-purple: #571b30;
+$text-lightest: #fff3cd;
 $warning: rgb(252, 81, 81);
 
 
@@ -66,6 +66,7 @@ $warning: rgb(252, 81, 81);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   .formWrapper {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -79,8 +80,8 @@ $warning: rgb(252, 81, 81);
 
     .logo {
       color: $text-purple;
-      font-weight: bold;
-      font-size: 24px;
+      font-weight: 650;
+      font-size: 25px;
     }
 
     .title {
@@ -161,6 +162,7 @@ $warning: rgb(252, 81, 81);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   .container {
 
@@ -293,13 +295,16 @@ $warning: rgb(252, 81, 81);
       }
 
       .search {
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid $bg-dark-purple;
 
         .searchForm {
           padding: 10px;
+          display: flex;
+          justify-content: space-between;
 
           @include mobile {
             display: none;
+            
           }
 
           input {
@@ -308,10 +313,26 @@ $warning: rgb(252, 81, 81);
             outline: none;
             color: white;
 
-
             &::placeholder {
               color: lightgray;
             }
+          }
+
+          button{
+
+            background-color: $text-purple;
+            color: $text-lightest;
+            font-size: 13px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: 500;   
+            padding: 5px 10px;         
+
+            &:hover {
+              background-color: $button-clr;
+            }
+
           }
         }
       }
@@ -320,7 +341,7 @@ $warning: rgb(252, 81, 81);
         // height: 75%;
         overflow: scroll;
         overflow-x: hidden;
-        height: calc(100% - 115px);
+        height: calc(100% - 120px);
 
         /* ===== Scrollbar CSS ===== */
         /* Firefox */
@@ -414,7 +435,7 @@ $warning: rgb(252, 81, 81);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: lightgray;
+        color: white;
         padding: 10px;
 
         .chatIcons {
@@ -507,7 +528,7 @@ $warning: rgb(252, 81, 81);
             }
 
             p {
-              background-color: $text-purple-light;
+              background-color: $bg-dark-purple;
               color: white;
               border-radius: 10px 0px 10px 10px;
 
@@ -530,7 +551,7 @@ $warning: rgb(252, 81, 81);
         h2 {
           margin-bottom: 20px;
           font-size: 35px;
-          color: #6b85da;
+          color: $bg-dark-purple;
           font-weight: 700;
         }
 
@@ -544,7 +565,8 @@ $warning: rgb(252, 81, 81);
           h2 {
             margin-bottom: 20px;
             font-size: 30px;
-            color: #6b85da;
+            color: $bg-dark-purple;
+
           }
 
           h6 {
@@ -570,7 +592,7 @@ $warning: rgb(252, 81, 81);
           width: 100%;
           border: none;
           outline: none;
-          color: $bg-dark-purple ;
+          color: $bg-dark-purple ;         
           font-size: 18px;
 
           &::placeholder {
@@ -592,7 +614,7 @@ $warning: rgb(252, 81, 81);
             border: none;
             padding: 10px 15px;
             color: white;
-            background-color: $text-purple-light;
+            background-color: $text-purple;
             cursor: pointer;
 
             &:active {
@@ -600,7 +622,7 @@ $warning: rgb(252, 81, 81);
             }
 
             &:hover {
-              background-color: $text-purple;
+              background-color:  $button-clr;
             }
 
           }
@@ -613,5 +635,61 @@ $warning: rgb(252, 81, 81);
 
     }
   }
+
+}
+
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 5px;
+  font-size: 15px;
+  text-align: center;  
+
+  @include mobile {
+    width: 90%;
+    font-size: 10px;
+    font-weight: 600;
+
+
+  }
+  @include tablet {
+    
+    font-size: 12px;
+    font-weight: 600;
+
+
+  }
+
+  p {
+    color: $button-clr;
+  }
+
+  span {
+    cursor: pointer;
+    color: $bg-dark-purple;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: #614e40;
+    }
+  }
+
+  .icon {
+    color: #0a66c2;
+    position: relative;
+    top: 2px;
+
+    &:hover {
+      color: #06417c;
+    }
+
+  }
+
 
 }
