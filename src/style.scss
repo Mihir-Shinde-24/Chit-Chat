@@ -1,11 +1,11 @@
-$bg-color: #fcf7de;
-$text-purple: #967863;
+$bg-color: #ffe3f2;
+$text-purple: #852747;
 $placeholder: rgb(175, 175, 175);
-$button-clr: #c1a275;
+$button-clr: #591129;
 $text-purple-light: #967863;
-$bg-sidebar: #ac9687;
-$bg-dark-purple: #a1826c;
-$text-lightest: #fffdf2;
+$bg-sidebar: #471931;
+$bg-dark-purple: #571b30;
+$text-lightest: #fff3cd;
 $warning: rgb(252, 81, 81);
 
 
@@ -341,7 +341,7 @@ $warning: rgb(252, 81, 81);
         // height: 75%;
         overflow: scroll;
         overflow-x: hidden;
-        height: calc(100% - 115px);
+        height: calc(100% - 120px);
 
         /* ===== Scrollbar CSS ===== */
         /* Firefox */
@@ -497,7 +497,7 @@ $warning: rgb(252, 81, 81);
 
 
             p {
-              background-color: $bg-color;
+              background-color: white;
               padding: 8px 11px;
               border-radius: 0px 10px 10px 10px;
               max-width: max-content;
@@ -592,7 +592,7 @@ $warning: rgb(252, 81, 81);
           width: 100%;
           border: none;
           outline: none;
-          color: $bg-dark-purple ;
+          color: $bg-dark-purple ;         
           font-size: 18px;
 
           &::placeholder {
@@ -614,7 +614,7 @@ $warning: rgb(252, 81, 81);
             border: none;
             padding: 10px 15px;
             color: white;
-            background-color: $bg-dark-purple ;
+            background-color: $text-purple;
             cursor: pointer;
 
             &:active {
@@ -622,7 +622,7 @@ $warning: rgb(252, 81, 81);
             }
 
             &:hover {
-              background-color: $text-purple;
+              background-color:  $button-clr;
             }
 
           }
