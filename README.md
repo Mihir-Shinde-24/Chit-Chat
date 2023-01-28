@@ -1,70 +1,41 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Chit Chat App
 
-## Available Scripts
+Chit Chat is **Modern Responsive Cross-Platform Messenger App** developed using technologies such as **React JS, React-Router, Firebase as Backend and SCSS.** 
 
-In the project directory, you can run:
+## Features of the Application
 
-### `npm start`
+1. This App enables users to instantly Send a **`Text message`** , share **`Images`** and also any GIF which will be displayed as an **`Animated Sticker`**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. The user has to first Create an account on the **`Register page`**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. If the user already has an Account he can go to **`Login page`**.
 
-### `npm test`
+4. At Login page, user has to authenticate himself by filling Email and Password. If user enters wrong credentials, an Error Message will be displayed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. This Email and Password will be Authenticated using **`Firebase Authentication`** and upon successful validation, user will be redirected to **`Chat Page`**.
 
-### `npm run build`
+6. At Register Page, for Creating an Account, the user has to fill just some basic details such as Name, Email, Password & Select an Avatar which will be set as his Profile Photo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+7. Upon successful filling up of the details, the user details will be stored in **`Firebase Firestore`** Database and also User Account will be created using 'Firebase Authentication' then the user will be redirected to the **`Chat Page`**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+8. At Chat Page, the user has to first search for other users by searching the name in **`Find a User`** input box & then select the user to add to Friends list. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+9. Now both User1 & User2 will be added in each other's Friend's list.
 
-### `npm run eject`
+10. To start a conversation the user has to simply select another user from the **`Friends List`** on sidebar.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+11. After selecting main chats page will appear with selected user's name at top and past conversations in the middle.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+12. All the Chat history will be stored in the **`Firebase Firestore`** database.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+13. On the sidebar we can also see latest message send by other users!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+14. The users can have fun by sending text messages, images or Animated GIFs as sticker.
 
-## Learn More
+15. So, What are you waiting for? **`Let's Chit-Chat!`**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Check out the website here! 👉 [Chit-Chat-App](https://lets-chit-chat-app.web.app/login)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
