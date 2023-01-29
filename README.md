@@ -43,16 +43,16 @@
 
 ## 🚀 Screenshots of Chit-Chat App 
 
-### Login Page
+### 1. Login Page
 <p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Login_Page.JPG" alt="Login.jpg" width="75%" /> 
 
-### Register Page
+### 2. Register Page
 <p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Register_Page.JPG" alt="Register.jpg" width="75%" />
  
-### Home Page
+### 3. Home Page
 <p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Home_page.JPG" alt="Home.jpg" width="75%" />
 
-### Chat Demo
+### 4. Chat Demo
 <p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Chat_Demo_2.gif" alt="Chat_demo.jpg" width="75%" />
 
 
