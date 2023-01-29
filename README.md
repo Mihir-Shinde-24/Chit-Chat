@@ -1,9 +1,10 @@
 
-# Chit Chat App
+# Chit Chat App 📧 
+**Chit Chat** 📧 is a **Modern Responsive Cross-Platform Messenger App** developed using technologies such as **React JS, React-Router, Firebase as Backend and SCSS.** 
 
-Chit Chat is **Modern Responsive Cross-Platform Messenger App** developed using technologies such as **React JS, React-Router, Firebase as Backend and SCSS.** 
+<p align="center" ><img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Chat_Demo_2.gif" alt="Chat_demo.jpg" width="75%" /></p>
 
-## Features of the Application
+## 🚀 Features of the Application
 
 1. This App enables users to instantly Send a **`Text message`** , share **`Images`** and also any GIF which will be displayed as an **`Animated Sticker`**.
 
@@ -36,6 +37,23 @@ Chit Chat is **Modern Responsive Cross-Platform Messenger App** developed using 
 15. So, What are you waiting for? **`Let's Chit-Chat!`**
 
 
-## Check out the website here! 👉 [Chit-Chat-App](https://lets-chit-chat-app.web.app/login)
+## 🚀 Check out the website here! 👉 [Chit-Chat-App](https://lets-chit-chat-app.web.app/login)
+
+<p align="center" ><img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Chat_Demo_2.gif" alt="Chat_demo.jpg" width="50%" /></p>
+
+## 🚀 Screenshots of Chit-Chat App 
+
+### Login Page
+<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Login_Page.JPG" alt="Login.jpg" width="75%" /> 
+
+### Register Page
+<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Register_Page.JPG" alt="Register.jpg" width="75%" />
+ 
+### Home Page
+<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Home_page.JPG" alt="Home.jpg" width="75%" />
+
+### Chat Demo
+<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Chat_Demo_2.gif" alt="Chat_demo.jpg" width="75%" />
 
 
+  
