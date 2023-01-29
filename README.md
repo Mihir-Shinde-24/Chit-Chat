@@ -2,7 +2,7 @@
 # Chit Chat App 📧 
 **Chit Chat** 📧 is a **Modern Responsive Cross-Platform Messenger App** developed using technologies such as **React JS, React-Router, Firebase as Backend and SCSS.** 
 
-<p align="center" ><img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Chat_Demo_2.gif" alt="Chat_demo.jpg" width="75%" /></p>
+<p align="center" ><img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Chat_Demo_2.gif" alt="Chat_demo.jpg" width="100%" /></p>
 
 ## 🚀 Features of the Application
 
@@ -44,16 +44,16 @@
 ## 🚀 Screenshots of Chit-Chat App 
 
 ### 1. Login Page
-<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Login_Page.JPG" alt="Login.jpg" width="75%" /> 
+<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Login_Page.JPG" alt="Login.jpg" width="100%" /> 
 
 ### 2. Register Page
-<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Register_Page.JPG" alt="Register.jpg" width="75%" />
+<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Register_Page.JPG" alt="Register.jpg" width="100%" />
  
 ### 3. Home Page
-<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Home_page.JPG" alt="Home.jpg" width="75%" />
+<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Home_page.JPG" alt="Home.jpg" width="100%" />
 
 ### 4. Chat Demo
-<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Chat_Demo_2.gif" alt="Chat_demo.jpg" width="75%" />
+<p align="center"> <img src="https://github.com/Mihir-Shinde-24/Chit-Chat/blob/new_theme/Chit-Chat-Demo-Images/Chat_Demo_2.gif" alt="Chat_demo.jpg" width="100%" />
 
 
   
